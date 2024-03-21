@@ -3,19 +3,48 @@
 
 main {
   margin: 4rem 4.5rem;
+
   text-align: center;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
   //   @include tablet {
   //     margin: 4rem 10rem;
   //   }
 }
+
+.box {
+  margin: 0 6rem;
+  padding: 1rem;
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border: 2px solid opacify($secondary-color-mercury, 0.5);
+  box-shadow: 0 4px 4px opacify($secondary-color-mercury, 0.5);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  @include tablet {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  &__image {
+    // padding: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
 .site {
   display: flex;
 
-  margin: 2rem;
+  margin: 1rem;
   margin-left: auto;
   margin-right: auto;
   //   @include tablet {
@@ -45,6 +74,7 @@ main {
 .button {
   align-self: center;
   width: fit-content;
+  margin-bottom: 3rem;
   background-color: $button-color;
   &:hover {
     background-color: $button-color-hover;
