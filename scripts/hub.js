@@ -134,5 +134,4 @@ getPosts().then((response) => {
   posts = response.data;
   console.log(posts);
   renderAllPosts(posts);
-  //render all posts
 });

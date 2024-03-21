@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mine</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
     <link rel="stylesheet" href="../styles/mine.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -16,38 +16,63 @@
       <nav>
         <a href="../index.html">Home</a>
         <a href="./facts.html">Fact</a>
-        <a href=".hub.html">Hub</a>
-        <a href=".playdate.html">Play</a>
-        <a href=".mine.html">Mine</a>
+        <a href="./hub.html">Hub</a>
+        <a href="./playdate.html">Play</a>
+        <a href="./mine.html">Mine</a>
       </nav>
       <div class="header__login">
         <a href="./login.html">Log in</a>
       </div>
     </header>
     <main>
-      <div class="my-cat" id="myCat">
-        <div class="my-cat__img-container">
-          <img
-            src="https://loremflickr.com/cache/resized/65535_52568957676_a47efa8a6f_b_640_480_nofilter.jpg"
-            alt="my cat"
-          />
-        </div>
-        <h2>Meow</h2>
-        <h3>🎂 Apr 29, 2021</h3>
-        <div class="my-cat__other-info">
-          <h3>Vaccine Due Date</h3>
-          <p>Apr 17, 2025</p>
-        </div>
-        <div class="my-cat__other-info">
-          <h3>Last Deworming</h3>
-          <p>Jan 17, 2024</p>
-        </div>
-        <a
-          class="button my-cat__button"
-          href="./mine-edit.html"
-          id="myCatButton"
-          >Edit Info</a
-        >
+      <div class="login">
+        <form class="my-cat__form">
+          <div class="my-cat__img-container">
+            <img
+              src="https://loremflickr.com/cache/resized/65535_52568957676_a47efa8a6f_b_640_480_nofilter.jpg"
+              alt="my cat"
+            />
+          </div>
+          <div class="login__form-item">
+            <label for="username">Name</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="name"
+              autocomplete="off"
+            />
+          </div>
+          <!-- <div class="login__form-item">
+            <label for="username">Birthday</label>
+            <input
+              type="text"
+              name="Birthday"
+              placeholder="Birthday"
+              autocomplete="off"
+            />
+          </div> -->
+          <div class="login__form-item">
+            <label for="username">Vaccine</label>
+            <input
+              type="text"
+              name="VaccineDueDate"
+              placeholder="Vaccine Due Date"
+              autocomplete="off"
+            />
+          </div>
+          <div class="login__form-item">
+            <label for="username">Deworming</label>
+            <input
+              type="text"
+              name="LastDeworming"
+              placeholder="Last Deworming"
+              autocomplete="off"
+            />
+          </div>
+          <a class="button login__button" href="./mine.html" id="my-catButton"
+            >Save info</a
+          >
+        </form>
       </div>
     </main>
     <footer class="footer">

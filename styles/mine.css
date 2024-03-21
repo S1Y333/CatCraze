@@ -1,1 +1,40 @@
-/*# sourceMappingURL=mine.css.map */
+.my-cat {
+  text-align: center;
+  padding-top: 30px;
+}
+.my-cat__img-container {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.my-cat__img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.my-cat h3 {
+  margin: 0.5rem 0;
+}
+.my-cat p {
+  margin: 0;
+}
+.my-cat__other-info {
+  margin: 20px 0;
+}
+.my-cat__button {
+  width: 200px;
+}
+.my-cat__form {
+  width: 200px;
+  margin: auto;
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .my-cat__form {
+    width: 300px;
+  }
+}/*# sourceMappingURL=mine.css.map */
