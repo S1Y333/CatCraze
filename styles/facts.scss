@@ -1,0 +1,70 @@
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+main {
+  margin: 6em 3rem;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    margin: 4rem 10rem;
+    padding-top: 4rem;
+  }
+}
+
+.box {
+  margin: 2rem 0 0;
+  width: 75vw;
+  height: fit-content;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  @include tablet {
+    margin: 2rem 10rem 0;
+    width: 40vw;
+  }
+
+  &__fact {
+    display: block;
+    border: 2px solid opacify($secondary-color-mercury, 0.5);
+    box-shadow: 0 4px 4px opacify($secondary-color-mercury, 0.5);
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+}
+
+.button {
+  align-self: center;
+  width: fit-content;
+  margin-bottom: 1rem;
+  background-color: $button-color;
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+.site {
+  display: flex;
+  margin: 1rem;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  h4 {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+  &__iconbox {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    max-width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+  }
+}
