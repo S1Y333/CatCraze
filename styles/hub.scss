@@ -1,2 +1,86 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+
+.posts {
+  width: 100%;
+  padding: 1rem;
+
+  @include tablet {
+    padding: 2.25rem;
+  }
+
+  @include desktop {
+    padding: 2.5rem 8rem;
+  }
+
+  &__post-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-container {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 5px;
+
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info-box {
+    width: 82%;
+
+    @include tablet {
+      width: 88%;
+    }
+
+    @include desktop {
+      width: 90%;
+    }
+  }
+
+  &__info-first-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-third-row {
+    margin: 0 0 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__info-username {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &__info-timestamp {
+    color: $primary-color-silver;
+    margin-bottom: 0;
+  }
+
+  &__like-count {
+    color: $primary-color-black;
+    font-size: 0.875rem;
+    margin: 0.18rem 0 0;
+  }
+
+  &__icon {
+    width: 15px;
+    margin: 0.3rem 0.5rem;
+    cursor: pointer;
+  }
+}

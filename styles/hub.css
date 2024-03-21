@@ -1,1 +1,79 @@
-/*# sourceMappingURL=hub.css.map */
+.posts {
+  width: 100%;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .posts {
+    padding: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .posts {
+    padding: 2.5rem 8rem;
+  }
+}
+.posts__post-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.posts__img-container {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  .posts__img-container {
+    width: 50px;
+    height: 50px;
+  }
+}
+.posts__img-container img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.posts__info-box {
+  width: 82%;
+}
+@media screen and (min-width: 768px) {
+  .posts__info-box {
+    width: 88%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .posts__info-box {
+    width: 90%;
+  }
+}
+.posts__info-first-row {
+  display: flex;
+  justify-content: space-between;
+}
+.posts__info-third-row {
+  margin: 0 0 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.posts__info-username {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.posts__info-timestamp {
+  color: #afafaf;
+  margin-bottom: 0;
+}
+.posts__like-count {
+  color: #323232;
+  font-size: 0.875rem;
+  margin: 0.18rem 0 0;
+}
+.posts__icon {
+  width: 15px;
+  margin: 0.3rem 0.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=hub.css.map */
