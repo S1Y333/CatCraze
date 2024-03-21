@@ -83,4 +83,21 @@
     margin: 0.3rem 0.5rem;
     cursor: pointer;
   }
+
+  &__buttonbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+
+    @include desktop {
+      bottom: 120px;
+    }
+  }
+
+  &__button {
+    width: 250px;
+  }
 }

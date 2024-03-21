@@ -76,4 +76,20 @@
   width: 15px;
   margin: 0.3rem 0.5rem;
   cursor: pointer;
+}
+.posts__buttonbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+}
+@media screen and (min-width: 1280px) {
+  .posts__buttonbox {
+    bottom: 120px;
+  }
+}
+.posts__button {
+  width: 250px;
 }/*# sourceMappingURL=hub.css.map */
