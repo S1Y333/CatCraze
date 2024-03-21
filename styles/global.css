@@ -58,7 +58,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 2.75rem;
   }
 }
@@ -111,39 +111,50 @@ button:hover {
   background-color: #218483;
 }
 
-header {
+.header {
   background-color: #d0e8ea;
   width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 @media screen and (min-width: 1280px) {
-  header {
+  .header {
     justify-content: flex-start;
     padding: 0 5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  header .logo_container {
+  .header__logo_container {
     margin-right: 3rem;
   }
 }
-header nav {
+.header nav {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  header nav {
+  .header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 18.75rem;
   }
 }
-header nav a {
+.header nav a {
   text-decoration: none;
   color: #323232;
+}
+.header__login {
+  display: none;
+  right: 5rem;
+}
+@media screen and (min-width: 1280px) {
+  .header__login {
+    display: inline-block;
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 1280px) {
