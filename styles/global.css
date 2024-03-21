@@ -76,19 +76,6 @@ h3 {
   }
 }
 
-footer p,
-footer a {
-  font-size: 0.8125rem;
-  line-height: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  footer p,
-  footer a {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-  }
-}
-
 label {
   font-size: 0.625rem;
   line-height: 1.25rem;
@@ -122,4 +109,94 @@ button {
 }
 button:hover {
   background-color: #218483;
+}
+
+header {
+  background-color: #d0e8ea;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  header {
+    justify-content: flex-start;
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header .logo_container {
+    margin-right: 3rem;
+  }
+}
+header nav {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18.75rem;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: #323232;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: #d0e8ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer__footnote {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .footer__footnote {
+    display: inline;
+  }
+}
+.footer__tab-bar {
+  padding: 20px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #d0e8ea;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .footer__tab-bar {
+    display: none;
+  }
+}
+.footer__tab-bar a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 1280px) {
+  .footer__tab-bar a {
+    font-size: 0.875rem;
+  }
+}
+.footer__tab-bar img {
+  width: 20px;
+  display: block;
+  margin: auto;
+}
+.footer__item-container {
+  height: 100%;
 }/*# sourceMappingURL=global.css.map */

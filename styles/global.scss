@@ -80,17 +80,6 @@ h3 {
   }
 }
 
-footer p,
-footer a {
-  font-size: 0.8125rem;
-  line-height: 1.5rem;
-
-  @include tablet {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-  }
-}
-
 label {
   font-size: 0.625rem;
   line-height: 1.25rem;
@@ -123,5 +112,97 @@ button {
 
   &:hover {
     background-color: $button-color-hover;
+  }
+}
+
+header {
+  background-color: $blue-mint;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    justify-content: flex-start;
+    padding: 0 5rem;
+  }
+
+  .logo_container {
+    @include desktop {
+      margin-right: 3rem;
+    }
+  }
+
+  nav {
+    display: none;
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 18.75rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-color-black;
+    }
+  }
+}
+
+.footer {
+  @include desktop {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: $blue-mint;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__footnote {
+    display: none;
+    @include desktop {
+      display: inline;
+    }
+  }
+
+  &__tab-bar {
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: $blue-mint;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include desktop {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-color-black;
+      font-size: 0.75rem;
+
+      @include desktop {
+        font-size: 0.875rem;
+      }
+    }
+
+    img {
+      width: 20px;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__item-container {
+    height: 100%;
   }
 }
