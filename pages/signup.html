@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
   </head>
   <body>
     <header class="header">
@@ -22,7 +23,37 @@
         <a href="./login.html">Log in</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="login">
+        <form class="login__form">
+          <div class="login__title">
+            <h2>Sign up</h2>
+          </div>
+          <div class="login__form-item">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              autocomplete="off"
+            />
+          </div>
+          <div class="login__form-item">
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              autocomplete="off"
+            />
+          </div>
+          <a class="button login__button" href="">Sign up</a>
+          <a class="login__signup-link" href="./login.html"
+            >Already a member? Log in!</a
+          >
+        </form>
+      </div>
+    </main>
     <footer class="footer">
       <p class="footer__footnote">
         Developed with 💗 by Evelyn, Heather & Sylvia

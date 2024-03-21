@@ -92,7 +92,8 @@ label {
   }
 }
 
-button {
+button,
+.button {
   font-family: "AvenirNext", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -105,9 +106,13 @@ button {
   border-radius: 0.25rem;
   color: #ffffff;
   background-color: #429e9d;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
   cursor: pointer;
 }
-button:hover {
+button:hover,
+.button:hover {
   background-color: #218483;
 }
 
@@ -119,6 +124,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
+  top: 0;
 }
 @media screen and (min-width: 1280px) {
   .header {
@@ -129,6 +135,16 @@ button:hover {
 @media screen and (min-width: 1280px) {
   .header__logo_container {
     margin-right: 3rem;
+  }
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
 }
 .header nav {
@@ -155,6 +171,14 @@ button:hover {
     display: inline-block;
     position: absolute;
   }
+}
+.header a {
+  text-decoration: none;
+  color: #323232;
+}
+
+main {
+  margin-top: 5rem;
 }
 
 @media screen and (min-width: 1280px) {
