@@ -1,145 +1,124 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-.site-header {
-    background-color: $primary-text-dark;
-    width:100%;
-
-    @include tablet {
-        display: flex;
-    }
-
-    @include desktop {
-        height:8vw;
-    }
-    
-
-    &__wrapper {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        padding-top: 6vw;
-
-        @include tablet {
-            padding-top: 0;
-        }
-    }
-
-    &__logo {
-
-        @include tablet {
-            padding: 4vw 6vw 3vw 6vw;
-        }
-
-        @include desktop {
-            padding: 4vw 8vw 4vw 8vw;
-        }
-    }
-}
-
 .nav {
-  background-color: $primary-color-black;
+  background-color: $primary-color-white;
+  margin-top: 5rem;
 
   @include tablet {
     display: flex;
   }
 
-
   &__list {
-            display: flex;
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-
-            @include tablet {
-                 align-items: flex-end;
-                 
-            }
-        
-      &-link {
-            color: $primary-color-white;
-            font-size: 0.8rem;
-            text-decoration: none;
-            padding: 2.5vw;
-            
-            @include tablet {
-                margin-top: 6vw;
-                
-            }
-
-            @include desktop {
-                font-size: 0.9rem;
-                padding-bottom: 3.4vw;
-            }
-
-        &-active
-            {
-                @include tablet {
-                    border-bottom: 0.2rem solid #ffffff;
-                    padding-left: 0;
-                    padding-right: 0;
-                    }
-
-            }
-        }
-
-      &-item {
-            display: inline-block;
-            font-weight: 500;
-            text-align: center;
-            width:50%;
-            font-size: 1.5rem;
-            padding-bottom: 2vw;
-            
-            @include tablet {
-                
-                padding-bottom: 2.3vw;
-                font-size: 2rem
-            }
-
-            @include desktop {
-                padding-bottom: 2.5vw;
-                font-size: 4rem
-
-            }
-        
-            &-active {
-                border-bottom: 0.2rem solid #ffffff;
-                padding-bottom: 3.3vw;
-                font-weight: 600;
-
-                  
-                @include tablet {
-                    border-bottom: 0;
-                    padding-bottom: 2.3vw;
-                
-                  } 
-
-
-                  @include desktop {
-                    padding-bottom: 2.8vw;
-                
-                  }
-
-             }
-          }
-     }
-  
-  }
-
-.card {
     display: flex;
-    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+
+    @include tablet {
+      align-items: flex-end;
+    }
+
+    &-link {
+      color: $button-color;
+      font-size: 0.8rem;
+      text-decoration: none;
+      padding: 2.5vw;
+
+      @include tablet {
+        margin-top: 6vw;
+      }
+
+      @include desktop {
+        font-size: 0.9rem;
+        padding-bottom: 3.4vw;
+      }
+
+      &-active {
+        @include tablet {
+          border-bottom: 0.2rem solid #218483;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
 
     &-item {
-             background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 10px;
-    }
+      display: inline-block;
+      font-weight: 500;
+      text-align: center;
+      width: 50%;
+      font-size: 1.5rem;
+      padding-bottom: 2vw;
 
-    &-img {
-        height:60%;
+      @include tablet {
+        padding-bottom: 2.3vw;
+        font-size: 2rem;
+      }
+
+      @include desktop {
+        padding-bottom: 2.5vw;
+        font-size: 4rem;
+      }
+
+      &-active {
+        border-bottom: 0.2rem solid #218483;
+        padding-bottom: 3.3vw;
+        font-weight: 600;
+
+        @include tablet {
+          border-bottom: 0;
+          padding-bottom: 2.3vw;
+        }
+
+        @include desktop {
+          padding-bottom: 2.8vw;
+        }
+      }
     }
+  }
+}
+
+.site-main {
+  margin-top: 1rem;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  
+    &-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 19rem;
+    // margin-left: 20%;
+    // margin-right: 20%;
+  }
+
+  &-button {
+    background-color: $button-color;
+    border-style: none;
+     width: 73vw;
+     padding: 4vw;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    height: 2rem;
+
+                &:hover {
+                  background-color: $button-color-hover;
+                  cursor:pointer;
+                }
+  }
+
+  &-img {
+    height: 60%;
+  }
 }

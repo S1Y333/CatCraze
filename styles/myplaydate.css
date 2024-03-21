@@ -1,0 +1,227 @@
+.nav {
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    align-items: flex-end;
+  }
+}
+.nav__list-link {
+  color: #429e9d;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 2.5vw;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-link {
+    margin-top: 6vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list-link {
+    font-size: 0.9rem;
+    padding-bottom: 3.4vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__list-link-active {
+    border-bottom: 0.2rem solid #218483;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.nav__list-item {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  width: 50%;
+  font-size: 1.5rem;
+  padding-bottom: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-item {
+    padding-bottom: 2.3vw;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list-item {
+    padding-bottom: 2.5vw;
+    font-size: 4rem;
+  }
+}
+.nav__list-item-active {
+  border-bottom: 0.2rem solid #218483;
+  padding-bottom: 3.3vw;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-item-active {
+    border-bottom: 0;
+    padding-bottom: 2.3vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list-item-active {
+    padding-bottom: 2.8vw;
+  }
+}
+
+.site-main {
+  margin-top: 1rem;
+}
+
+.dates-section__title {
+  padding: 2vw 5vw 0 5vw;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .dates-section__title {
+    font-size: 2.5rem;
+    margin-left: 2vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dates-section__title {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10vw;
+  }
+}
+.dynamic-mydates__entry {
+  margin: 0 5vw;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__entry {
+    display: flex;
+    justify-content: space-between;
+    height: 8vw;
+    margin: 0 4vw 0 8vw;
+    width: 85%;
+  }
+  .dynamic-mydates__entry:hover {
+    background-color: #218483;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__entry {
+    height: 6vw;
+    margin: 0;
+    width: 63vw;
+    padding-left: 3vw;
+  }
+}
+.dynamic-mydates__title {
+  color: #afafaf;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-bottom: 2vw;
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__title {
+    font-size: 0rem;
+  }
+}
+.dynamic-mydates__title-label {
+  font-size: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__title-label {
+    color: #afafaf;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__title-label {
+    margin-left: -5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__title-labelvenue {
+    margin-left: 11vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__title-labelvenue {
+    margin-left: -4vw;
+  }
+}
+.dynamic-mydates__date-copy {
+  font-weight: 600;
+  margin: 2.5vw 0 6vw;
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__date-copy {
+    margin: 2.5vw 0 0 -3vw;
+    font-size: 0.8rem;
+  }
+}
+.dynamic-mydates__copy {
+  margin: 2.5vw 0 6vw;
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__copy {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 2vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__copy {
+    margin: 2.5vw 2vw 0 6vw;
+  }
+}
+.dynamic-mydates__button {
+  border-style: none;
+  background-color: #429e9d;
+  width: 50%;
+  padding: 0;
+  height: 2rem;
+  border-radius: 0.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .dynamic-mydates__button {
+    width: 15vw;
+    height: 4vw;
+    margin-right: 0;
+    padding: 0;
+    margin-top: 2vw;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dynamic-mydates__button {
+    width: 12vw;
+    height: 3vw;
+    margin-top: 1.3vw;
+  }
+}/*# sourceMappingURL=myplaydate.css.map */

@@ -1,5 +1,6 @@
 .nav {
-  background-color: #323232;
+  background-color: #ffffff;
+  margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -11,6 +12,7 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .nav__list {
@@ -18,7 +20,7 @@
   }
 }
 .nav__list-link {
-  color: #ffffff;
+  color: #429e9d;
   font-size: 0.8rem;
   text-decoration: none;
   padding: 2.5vw;
@@ -36,7 +38,7 @@
 }
 @media screen and (min-width: 768px) {
   .nav__list-link-active {
-    border-bottom: 0.2rem solid #ffffff;
+    border-bottom: 0.2rem solid #218483;
     padding-left: 0;
     padding-right: 0;
   }
@@ -62,7 +64,7 @@
   }
 }
 .nav__list-item-active {
-  border-bottom: 0.2rem solid #ffffff;
+  border-bottom: 0.2rem solid #218483;
   padding-bottom: 3.3vw;
   font-weight: 600;
 }
@@ -76,4 +78,39 @@
   .nav__list-item-active {
     padding-bottom: 2.8vw;
   }
+}
+
+.site-main {
+  margin-top: 1rem;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 19rem;
+}
+.card-button {
+  background-color: #429e9d;
+  border-style: none;
+  width: 73vw;
+  padding: 4vw;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  height: 2rem;
+}
+.card-button:hover {
+  background-color: #218483;
+  cursor: pointer;
+}
+.card-img {
+  height: 60%;
 }/*# sourceMappingURL=playdate.css.map */
