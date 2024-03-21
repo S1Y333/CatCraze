@@ -28,6 +28,11 @@
 .my-cat__button {
   width: 200px;
 }
+@media screen and (min-width: 768px) {
+  .my-cat__button {
+    width: 250px;
+  }
+}
 .my-cat__form {
   width: 200px;
   margin: auto;
