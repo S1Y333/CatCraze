@@ -101,11 +101,11 @@
 .card-button {
   background-color: #429e9d;
   border-style: none;
-  width: 73vw;
-  padding: 4vw;
+  width: 250px;
+  height: 41px;
+  padding: 0;
   border-radius: 0.25rem;
   font-weight: 700;
-  height: 2rem;
 }
 .card-button:hover {
   background-color: #218483;

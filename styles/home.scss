@@ -2,8 +2,8 @@
 @use "./partials/mixins" as *;
 
 main {
-  margin: 4rem 4.5rem;
-
+  margin-top: 4rem;
+  padding-top: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -39,10 +39,11 @@ main {
 
 .site {
   display: flex;
+  justify-content: center;
 
-  margin: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto 0;
+
+  // padding: 0 80px;
 
   h4 {
     font-size: 0.8125rem;

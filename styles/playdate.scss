@@ -91,8 +91,7 @@
 }
 
 .card {
-  
-    &-item {
+  &-item {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -106,16 +105,18 @@
   &-button {
     background-color: $button-color;
     border-style: none;
-     width: 73vw;
-     padding: 4vw;
+    width: 250px;
+    height: 41px;
+    padding: 0;
+    // padding: 4vw;
     border-radius: 0.25rem;
     font-weight: 700;
-    height: 2rem;
+    // height: 2rem;
 
-                &:hover {
-                  background-color: $button-color-hover;
-                  cursor:pointer;
-                }
+    &:hover {
+      background-color: $button-color-hover;
+      cursor: pointer;
+    }
   }
 
   &-img {
