@@ -1,0 +1,38 @@
+.login__title {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.login__wrong {
+  display: none;
+  color: red;
+}
+.login__form {
+  width: 200px;
+  margin: auto;
+  padding-top: 80px;
+}
+@media screen and (min-width: 768px) {
+  .login__form {
+    width: 300px;
+  }
+}
+.login__form-item {
+  width: 100%;
+  margin: 10px auto;
+}
+.login__form-item input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+}
+.login__button {
+  margin-top: 10px;
+}
+.login__signup-link {
+  display: inline-block;
+  color: #429e9d;
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+}/*# sourceMappingURL=login.css.map */

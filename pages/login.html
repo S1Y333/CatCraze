@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <script src="../scripts/login.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -14,15 +16,50 @@
       <nav>
         <a href="../index.html">Home</a>
         <a href="./facts.html">Fact</a>
-        <a href=".hub.html">Hub</a>
-        <a href=".playdate.html">Play</a>
-        <a href=".mine.html">Mine</a>
+        <a href="./hub.html">Hub</a>
+        <a href="./playdate.html">Play</a>
+        <a href="./mine.html">Mine</a>
       </nav>
       <div class="header__login">
         <a href="./login.html">Log in</a>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="login">
+        <form class="login__form">
+          <div class="login__title">
+            <h2>Log in</h2>
+          </div>
+          <div class="login__form-item">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              autocomplete="off"
+              id="username"
+            />
+          </div>
+          <div class="login__form-item">
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              autocomplete="off"
+              id="password"
+            />
+          </div>
+          <a class="button login__button" href="" id="loginButton">Log in</a>
+          <a class="login__signup-link" href="./signup.html"
+            >Not a member yet? Sign up!</a
+          >
+          <p class="login__wrong" id="wrongText">
+            Wrong combination of username & password!
+          </p>
+        </form>
+      </div>
+    </main>
     <footer class="footer">
       <p class="footer__footnote">
         Developed with 💗 by Evelyn, Heather & Sylvia
